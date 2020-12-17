@@ -1,0 +1,75 @@
+/******************************
+FONTS IMPORT FROM FONTS FOLDER
+*******************************/
+@font-face {
+  font-family: 'SFRounded';
+  src: url('SFRounded-Light.woff2') format('woff2'),
+      url('SFRounded-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SFRounded';
+  src: url('fonts/SFRounded-Bold.woff2') format('woff2'),
+      url('fonts/SFRounded-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Erotique';
+  src: url('fonts/Erotique-Bold.woff2') format('woff2'),
+      url('fonts/Erotique-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Erotique';
+  src: url('fonts/Erotique-Medium.woff2') format('woff2'),
+      url('fonts/Erotique-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/******************************
+TYPOGRAPHY
+*******************************/
+h1 {
+  font-family: "SFRounded";
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: "Erotique";
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-family: "Erotique";
+  font-size: 1.4rem;
+}
+
+
+a {
+  font-family: "Erotique";
+  text-decoration: none;
+  color: var(--fontColor);
+  font-size: 1.4rem;
+}
+
+p {
+  font-family: "Erotique";
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  font-weight: 100;
+}
+
+
+

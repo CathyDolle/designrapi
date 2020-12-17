@@ -1,0 +1,93 @@
+/******************************
+FONTS IMPORT FROM FONTS FOLDER
+*******************************/
+@font-face {
+  font-family: 'SFRounded';
+  src: url('SFRounded-Light.woff2') format('woff2'),
+      url('SFRounded-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SFRounded';
+  src: url('fonts/SFRounded-Bold.woff2') format('woff2'),
+      url('fonts/SFRounded-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Erotique';
+  src: url('fonts/Erotique-Bold.woff2') format('woff2'),
+      url('fonts/Erotique-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Erotique';
+  src: url('fonts/Erotique-Medium.woff2') format('woff2'),
+      url('fonts/Erotique-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/******************************
+BASE : unit for typo : rem (put font-size: 62,5% in your html)
+*******************************/
+:root {
+  // colors
+  --bgColor: #f7f4eb;
+  --fontColor: black;
+  --primaryColor: rgb(170, 165, 250);
+  --secondaryColor: rgb(248, 183, 123);
+  --sandColor: #C8B28B;
+  // font size
+  --titleSize: 5.5rem;
+  --subtitleSize: 4rem;
+  --headlineSize: 3rem;
+  --linkSize: 1.4rem;
+  --fontSize: 1.6rem;
+}
+
+/******************************
+TYPOGRAPHY
+*******************************/
+h1 {
+  font-family: "SFRounded";
+  font-size: var(--titleSize);
+}
+
+h2 {
+  font-family: "Erotique";
+  font-size: var(--subtitleSize);
+}
+
+h3 {
+  font-family: "Erotique";
+  font-size: var(--headlineSize);
+}
+
+
+a {
+  font-family: "Erotique";
+  text-decoration: none;
+  color: var(--fontColor);
+  font-size: var(--linkSize);
+}
+
+p {
+  font-family: "Erotique";
+  font-size: var(--fontSize);
+  line-height: 2.6rem;
+  font-weight: 100;
+}
+
+
+
