@@ -15,6 +15,12 @@ import product from "../../services/product"
  *       - colors: colors
  *         in: body
  *         type: array
+ *       - name: fonts
+ *         in: body
+ *         type: string  
+ *       - name: category
+ *         in: body
+ *         type: string 
  *     responses:
  *       200:
  *         description: product

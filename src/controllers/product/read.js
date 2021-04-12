@@ -1,6 +1,6 @@
 import product from '../../services/product'
-function productPath(item){
-  return 'http://' + process.env.SERVER_ADDRESS + ':' + process.env.SERVER_PORT + '/' + item 
+function productPath(name, item){
+  return 'http://' + process.env.SERVER_ADDRESS + ':' + process.env.SERVER_PORT + `/public/products/${name}/${item}`
 }
 
 /**
@@ -26,9 +26,9 @@ export default async function (req, res) {
     let prod = await product.findByName(name)
         prod = {
           ...prod._doc,
-          thumbnail: productPath(prod._doc.thumbnail),
-          figma: productPath(prod._doc.figma),
-          stylesheet: productPath(prod._doc.stylesheet),
+          figma: productPath(prod._doc.name, 'business/figma.zip'),
+          stylesheet: productPath(prod._doc.name, 'business/stylesheet.zip'),
+          thumbnail: productPath(prod._doc.name, 'thumbnail.jpg')
         }        
     res.json(prod)
   } catch (e) {
